@@ -153,7 +153,7 @@ def recognized_cb(evt):
     final_text = evt.result.text.strip()
 
     if "quit" in final_text.lower():
-        print("👋 Quitting session...")
+        print("Quitting session")
         quit_program = True
         stop_speaking_if_needed()
         tts_queue.put(None)  # shutdown TTS worker
